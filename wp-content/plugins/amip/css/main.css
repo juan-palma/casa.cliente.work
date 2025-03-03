@@ -1,0 +1,1181 @@
+:root{
+	--margenGlobal: 9vw;
+	--anchoContainer: calc(100vw - (var(--margenGlobal) * 2));
+	--margenGlobalP: 9%;
+	--anchoContainerP: calc(100% - (var(--margenGlobalP) * 2));
+}
+
+
+
+
+/* Estilos para el admin */
+.wp-block-html{
+	width: 100%;
+}
+
+is-root-container is-layout-constrained wp-block-post-content-is-layout-constrained has-global-padding wp-block-post-content block-editor-block-list__layout{
+	width: 100% !important;
+	max-width: 100% !important;
+}
+	is-root-container is-layout-constrained wp-block-post-content-is-layout-constrained has-global-padding wp-block-post-content block-editor-block-list__layout > div{
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > :where(:not(.alignleft):not(.alignright):not(.alignfull)){
+		max-width: 100% !important;
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+	body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)).videoDesvanecido{
+		width: 100% !important;
+	}
+	.editor-styles-wrapper :where(body .is-layout-constrained) > :last-child:last-child{
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+	.editor-styles-wrapper .is-layout-flex > *,
+	.editor-styles-wrapper .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+	.editor-styles-wrapper :where(body .is-layout-constrained) > :last-child:last-child{
+		max-width: 100%;
+	}
+	
+/* -- FIN admin -- */
+
+
+/* Estilos para el admin personalizados unicos del diseño */
+/* -- FIN admin -- */
+
+
+
+
+
+.grecaptcha-badge {
+	display: none;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+	position: absolute;
+}
+
+
+.wpBloqueContenido {
+	overflow-x: hidden;
+}
+
+.boxMargen1{
+	width: var(--anchoContainer);
+	padding: 0 var(--margenGlobal);
+	box-sizing: content-box;
+	position: relative;
+	z-index: 1;
+}
+.boxMargenP1{
+	width: var(--anchoContainerP);
+	padding: 0 var(--margenGlobalP);
+	box-sizing: content-box;
+	position: relative;
+	gap: 32px;
+	z-index: 1;
+}
+.margenGlobalTop{
+	margin-top: var(--margenGlobal);
+}
+.margenGlobalBottom{
+	margin-top: var(--margenGlobal);
+}
+.margenGlobalLeft{
+	margin-top: var(--margenGlobal);
+}
+.margenGlobalRight{
+	margin-top: var(--margenGlobal);
+}
+header.nav_principal {
+	position: fixed;
+	width: 100vw;
+	z-index: 66666;
+}
+.primerMargen {
+    width: 100%;
+    padding: 62px 20%;
+}
+
+
+
+
+.video{
+	width: 100%;
+	position: relative;
+}
+.justificado {
+	text-align: justify;
+}
+
+
+
+
+/* ==========================================================================
+	Estilos visiales para WhatsApp chat
+========================================================================== */
+@keyframes hover {
+	0% {
+	  transform: translateY(6px) scale(.96);
+	}
+	100% {
+	  transform: translateY(-6px) scale(1);
+	}
+  }
+div#whatsapp {
+    width: 94px;
+    height: 94px;
+    position: fixed;
+    bottom: 6vh;
+    right: 6vw;
+    cursor: pointer;
+    border-radius: 50%;
+	z-index: 8888;
+	animation: hover 2s infinite ease-in-out alternate;
+}
+@media screen and (orientation:portrait) and (max-width: 680px){
+	div#whatsapp {
+		width: 72px;
+		height: 72px;
+		bottom: 6vh;
+		right: 4vw;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wp-site-blocks{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/*Estilos globales y generios*/
+.idaTextAlignCenter{
+	text-align: center;
+}
+
+
+/*Estilos especificos del sitio*/
+/*
+Estructuras principales :::::::::
+*/
+.idaContain {
+    height: 100vh;
+	padding-bottom: 410px;
+}
+.idaFooterPower {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+@media (max-width: 781px){
+	.wp-container-15.wp-container-15 {
+		justify-content: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.títulos{
+	letter-spacing: 6px;
+}
+.titulo_amip {
+width: min-content;
+margin-bottom: 26px !important;
+text-transform: uppercase;
+position: relative;
+display: inline-flex;
+flex-wrap: wrap;
+}
+h2.titulo_amip, h3.titulo_amip {
+	margin-bottom: 35px !important;
+}
+	h2.titulo_amip span, h3.titulo_amip span {
+		color: var(--wp--preset--color--accent);
+		display: contents;
+	}
+.titulo_amip_linea::after {
+	content: "";
+	display: block;
+	width: 60%;
+	height: 2px;
+	background-color: var(--wp--preset--color--accent-2);
+	position: absolute;
+	top: auto;
+	bottom: 0px;
+	right: 0px;
+}
+.derecho h2.titulo_amip, .derecho h3.titulo_amip {
+	text-align: right;
+}
+
+
+
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)).videoDesvanecido {
+	width: 100vw !important;;
+	margin-left: calc(var(--margenGlobal) * -1) !important;
+	position: relative;
+	overflow: hidden;
+}
+	.videoDesvanecido::before,
+	.videoDesvanecido::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 101%;
+		height: 40%;
+		top: 0px;
+		left: 0px;
+		background-color: transparent;
+		background: linear-gradient(0deg, #ffffff00 0%, var(--wp--preset--color--base) 80%);
+		z-index: 2;
+	}
+	.videoDesvanecido::after {
+		top: auto;
+		bottom: 0px;
+		background: linear-gradient(180deg, #ffffff00 0%, var(--wp--preset--color--base) 80%);
+	}
+
+
+
+
+
+
+
+
+
+/* #boxMenuG{
+
+}
+	#boxMenuG svg {
+		width: 34px;
+		height: 34px;
+	}
+	div#modal-1{
+		padding: var(--margenGlobal);
+		background-color: #ffffffee;
+		width: max-content;
+		left: auto;
+	}
+		div#modal-1-content{
+			width: 100%;
+			height: calc(100vh - (calc(2rem + 24px) + calc(var(--margenGlobal) * 1)));
+			align-items: center;
+		}
+			div#modal-1-content ul{
+				width: 100%;
+				justify-content: center;
+				grid-gap: 26px;
+			}
+				div#modal-1 ul li {
+					text-align: right;
+				} */
+
+
+
+
+
+
+
+
+
+
+
+.amip_headBox {
+    height: 92vh;
+    overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.amip_headBox .wp-block-site-logo{
+	margin-left: -1px;
+}
+	.inicio_boxGHeader {
+		height: 100%;
+		position: relative;
+	}
+		.inicio_fondo_destacada {
+			width: 100%;
+			height: 100%;
+		}
+			.inicio_fondo_destacada img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center bottom;
+			}
+			.inicio_fondo_destacada::before {
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background: linear-gradient(0deg, #0c1d26 10%, #0c1d2600 74%);
+			}
+		.inicio_navBoxG {
+			position: absolute !important;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			max-height: 100%;
+			overflow: hidden;
+			z-index: 10;
+		}
+			.inicio_navBoxG > * {
+				width: 100%;
+				box-sizing: border-box;
+			}
+			.home .inicio_navBoxG > h1{
+				display: none;
+			}
+			.inicio_icono_inicio{
+				width: 0px;
+				height: 0px;
+				display: none;
+				overflow: hidden;
+			}
+			.home .inicio_icono_inicio {
+				width: max(14vw, 156px);
+				height: auto;
+				display: block;
+				align-self: center;
+				margin: 0 auto;
+			}
+			.inicio_navBoxG > nav {
+				transform: translateY(-60%);
+				position: relative;
+				padding: 0rem 20vw;
+				height: 60px;
+				z-index: 2;
+			}
+				.inicio_navBoxG > nav::before,
+				.inicio_navBoxG > nav::after{
+					content: "";
+					width: 16vw;
+					height: 2px;
+					position: absolute;
+					top: 50%;
+					left: 0px;
+					background-color: var(--wp--preset--color--accent);
+				}
+				.inicio_navBoxG > nav::after{
+					left: auto;
+					right: 0px;
+				}
+					div#modal-1-content > ul{
+						flex-wrap: nowrap;
+    					gap: 5dvw;
+					}
+						div#modal-1-content > ul > li{
+							text-align: center;
+						}
+						div#modal-1-content ul li,
+						div#modal-1-content ul li a{
+							text-decoration: none !important;
+
+							-webkit-transition: all 0.2s ease-in-out;
+							-moz-transition: all 0.2s ease-in-out;
+							-o-transition: all 0.2s ease-in-out;
+							-ms-transition: all 0.2s ease-in-out;
+							transition: all 0.2s ease-in-out;
+						}
+						ul li.current-menu-item{
+							color: var(--wp--preset--color--accent-2);
+						}
+						div#modal-1-content ul li:hover{ 
+							color: var(--wp--preset--color--accent-2);
+							text-decoration: none;
+						}
+						div#modal-1-content ul li:hover{ 
+							color: var(--wp--preset--color--accent-2);
+							text-decoration: none;
+						}
+						div#modal-1.is-menu-open.has-modal-open {
+							height: 140%;
+							min-height: 140%;
+							max-height: 140%;
+							overflow: hidden;
+						}
+						div#modal-1.is-menu-open.has-modal-open .wp-block-navigation__responsive-container-close{
+							top: 50%;
+							right: 12px;
+							transform: translateY(-50%);
+						}
+							div#modal-1.is-menu-open.has-modal-open .wp-block-navigation__responsive-close {
+								width: 100%;
+								max-height: 100%;
+								min-height: 100%;
+								overflow: hidden;
+							}
+								div#modal-1.is-menu-open.has-modal-open .wp-block-navigation__responsive-close .wp-block-navigation__responsive-dialog {
+									height: 100%;
+									max-height: 100%;
+									min-height: 100%;
+									overflow: hidden;
+								}
+									div#modal-1.is-menu-open.has-modal-open div#modal-1-content {
+										height: 100%;
+										max-height: 100%;
+										min-height: 100%;
+										margin: 0px;
+										padding: 0px;
+										overflow: hidden;
+									}
+										div#modal-1.is-menu-open.has-modal-open div#modal-1-content ul {
+											width: 100%;
+											height: 100%;
+											max-height: 100%;
+											min-height: 100%;
+											display: block;
+											overflow-y: auto;
+											margin: 0 var(--margenGlobal);
+										}
+											div#modal-1.is-menu-open.has-modal-open div#modal-1-content ul li {
+												height: 100%;
+												display: flex;
+												justify-content: center;
+												align-items: center;
+											}
+											@keyframes columpio {
+												from {transform: translateY(-56%);}
+												to {transform: translateY(-8%);}
+											}
+											div#modal-1.is-menu-open.has-modal-open div#modal-1-content::after {
+												font-family: "Font Awesome 6 Free";
+												content: "\f063";
+												font-weight: 900;
+												font-size: 140%;
+												display: block;
+												position: absolute;
+												top: 50%;
+												transform: translateY(-50%);
+												left: 24px;
+												animation: columpio 2s infinite ease-in-out alternate;
+											}
+			.inicio_socialLateral{
+				width: 100px;
+				height: calc(90% - 100px);
+				position: absolute !important;
+				top: 110px;
+				left: 0px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				z-index: 2;
+			}
+				.inicio_socialLateral > p {
+					white-space: nowrap;
+					writing-mode: tb;
+					letter-spacing: 5px;
+					font-size: clamp(9px, 1.8vh, 16px);
+				}
+
+
+
+
+
+
+
+
+
+
+
+.boxServiciosG {
+    
+}
+	.boxServicios {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 34px;
+		grid-auto-rows: minmax(100px, auto);
+		position: relative;
+	}
+	
+		.boxServicio {
+			width: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			grid-gap: 16px;
+			text-align: center;
+		}
+			.boxServicio .cerrar {
+				height: 46px;
+				width: 42px;
+				position: absolute;
+				top: 7px;
+				left: 0px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: chocolate;
+				transform-origin: right center;
+				transform: translateX(0px);
+				opacity: 0;
+				overflow: hidden;
+			}
+				.boxServicio .cerrar::before {
+					content: "\f00d";
+					font-family: 'Font Awesome 5 Free';
+					font-size: 24px;
+					font-weight: 900;
+				}
+			.boxServicio figure {
+				height: max(6vw, 66px);
+			}
+				.boxServicio figure img {
+					width: auto;
+					height: 100% !important;
+				}
+			.boxServicioInfo {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				opacity: 0;
+				display: none;
+				z-index: 2;
+			}
+				.boxServicioInfo .boxInfoG{
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: flex-start;
+					font-weight: 200;
+				}
+				.wp-admin .boxServicioInfo .boxInfoG{
+					flex-direction: column;
+				}
+					.boxServicioInfo .boxInfoG .iconoFalso {
+						aspect-ratio: 16 / 10;
+						width: 25%;
+    					margin: 0px !important;
+					}
+					.boxInfoCol {
+						width: 75%;
+						height: 100%;
+						text-align: left;
+					}
+						.boxServicioInfo .boxInfoCol .boxServicioInfoP {
+							margin: 32px 0px 0px;
+							height: calc(100% - 32px);
+							overflow-y: auto;
+							padding-right: 14px;
+						}
+							.boxServicioInfo .boxInfoCol .boxServicioInfoP p{
+								margin-bottom: 18px;
+							}
+			
+
+
+
+
+.inicioSecProyectos{
+	overflow: hidden;
+}
+	.proyectosBox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.proyectosBox ul {
+			display: flex;
+			justify-content: center;
+			grid-gap: 2vw;
+		}
+			.proyectosBox ul li{
+				flex: 1 1 100%;
+				position: relative;
+				overflow: hidden;
+				transform: scale(.7);
+
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				-ms-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			.proyectosBox ul li:hover{
+				transform: scale(1);
+			}
+				.proyectosBox ul > li > figure {
+					width: 100%;
+    				height: 100%;
+					aspect-ratio: 4/6;
+				}
+					.proyectosBox ul > li > figure img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+					}
+				.proyectosBox ul > li > .info {
+					width: 64%;
+					height: 100%;
+					position: absolute;
+					top: 0px;
+					left: auto;
+					right: 0px;
+					padding: 40px;
+					background-color: var(--wp--preset--color--accent);
+					color: white;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					text-align: left;
+					grid-gap: 16px;
+					opacity: 0;
+					transform: translateX(100%);
+
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+				}
+				.proyectosBox ul > li:hover > .info {
+					transform: translateX(0%);
+					opacity: 1;
+				}
+					.proyectosBox ul > li > .info > * {
+						margin: 0 !important;
+					}
+						.proyectosBox ul > li > .info time {
+							color: var(--wp--preset--color--accent-2);
+						}
+						.proyectosBox ul > li > .info > .wp-block-post-excerpt {
+							font-size: 90%;
+						}
+
+
+
+
+.boxCarouselClientes{
+	position: relative;
+}
+.boxCarouselClientes::before,
+.boxCarouselClientes::after {
+    content: "";
+    width: 24%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(90deg, rgba(12,29,38,1) 18%, rgba(12,29,38,0) 100%);
+    z-index: 2;
+}
+.boxCarouselClientes::after{
+	transform: rotate(180deg);
+	left: auto;
+	right: 0px;
+}
+
+
+
+
+
+.boxNosotrosG {
+    display: flex;
+    grid-gap: 32px;
+	align-items: center;
+}
+	.inicioSecNosotros .colImg figure {
+		aspect-ratio: 1;
+	}
+	.inicioSecNosotros .colImg figure img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+
+.inicioSecFrase {
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+	.inicioSecFrase .parallax{
+		width: 100%;
+		height: 96vh;
+		overflow: hidden;
+	}
+		.inicioSecFrase .parallax .imgFraseFondo{
+			width: 100%;
+			overflow: hidden;
+			top: 0vh !important;
+			height: 110vh !important;
+			max-height: 110vh !important;
+		}
+			.inicioSecFrase .parallax .imgFraseFondo img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+	.inicioSecFrase .imgFrase {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+
+
+
+
+
+
+
+.footerGlobal{
+	background-color: var(--wp--preset--color--base);
+	position: relative;
+	z-index: 1;
+}
+.lineasLaterales{
+	position: relative;
+}
+	.lineasLaterales::before, .lineasLaterales::after {
+		content: "";
+		width: 28vw;
+		height: 2px;
+		position: absolute;
+		top: 50%;
+		left: 0px;
+		background-color: var(--wp--preset--color--accent);
+	}
+	.lineasLaterales::after {
+		left: auto;
+		right: 0px;
+	}
+figure#logoFooter {
+	height: max(14vw, 116px);
+	display: flex;
+	justify-content: center;
+}
+	div#footerBoxG > figure:first-child {
+		background-color: var(--wp--preset--color--base);
+		margin-top: -1px;
+		overflow: hidden;
+	}
+		div#footerBoxG > figure:first-child img {
+			width: 100%;
+			height: auto;
+			transform: scale(110%);
+		}
+	figure#logoFooter img {
+		width: auto;
+		height: 100%;
+	}
+	
+
+div.animacionLineas {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 2;
+}
+.footerGlobal .boxMargenP1{
+	z-index: initial;
+}
+	.footerGlobal .boxMargenP1 > div{
+		position: relative;
+		z-index: 10;
+	}
+.derechosRecerbados{
+	position: relative;
+	z-index: 21;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos pagina profesionales en tu casa */
+.casa_servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	overflow: hidden;
+}
+	.casa_servicios .casa_servicio {
+		position: relative;
+		flex: 1 1 100%;
+		width: 100%;
+		height: auto;
+		justify-content: flex-start;
+		align-items: center;
+		min-height: auto;
+		padding-left: max(2.5rem, 4dvw) !important;
+		padding-right: max(2.5rem, 4dvw) !important;
+	}
+		.casa_servicio .wp-block-cover__inner-container {
+			width: auto;
+		}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos de la pagina Proyectos */
+.proyectosCG {
+    width: 100%;
+    position: relative;
+}
+	.servicio {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: calc(1rem + 2dvw);
+	}
+		.servicio > li {
+			height: max-content;
+		}
+			.servicio > li .proyectosInfoBox {
+				width: 100%;
+				height: 0px;
+				position: relative;
+				top: 0px;
+				left: 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				background-color: #000000cc;
+				overflow-x: hidden;
+				overflow-y: auto;
+				opacity: 0;
+				z-index: 30;
+
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				-ms-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			.servicio > li.activo .proyectosInfoBox{
+				opacity: 1;
+				height: max-content;
+			}
+				.servicio > li .proyectosInfoBox .grupo{
+					padding: 12%;
+				}
+					.servicio > li .proyectosInfoBox .grupo > i {
+						position: absolute;
+						top: 22px;
+						right: 22px;
+						font-size: 30px;
+						cursor: pointer;
+					}
+					.servicio > li .proyectosInfoBox p{
+						margin-bottom: 42px;
+					}
+					/* .servicio > li .proyectosInfoBox h2, */
+					.servicio > li .proyectosInfoBox h3,
+					.servicio > li .proyectosInfoBox h4{
+						margin-bottom: 22px;
+					}
+					.servicio > li .proyectosInfoBox .wp-block-post-date{
+						color: var(--wp--preset--color--accent-2);
+						margin-bottom: 52px;
+					}
+					.servicio > li .proyectosInfoBox figure {
+						width: 100%;
+						display: inline-flex;
+						margin-bottom: 32px;
+					}
+				.servicio > li > figure {
+					aspect-ratio: 4/5;
+				}
+					.servicio > li > figure::before {
+						content: "";
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						background-color: #00000066;
+					}
+					.servicio > li > figure img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+					}
+				.servicio > li > h2 {
+					position: relative;
+					z-index: 2;
+					margin-top: -66px;
+					margin-left: 28px;
+					margin-bottom: 38px;
+					font-size: clamp(22px, .4rem + .8dvw, 32px);
+				}
+
+
+
+
+
+
+
+
+/* Estilos para seccion Servicios */
+
+div#servicios_contG .contenedorCol {
+    gap: 8dvw;
+}
+	div#servicios_contG .contenedorCol .contenedor {
+		position: relative;
+		cursor: pointer;
+	}
+		div#servicios_contG .contenedorCol .contenedor .imagenTitulo{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+			div#servicios_contG .contenedorCol .contenedor .imagenTitulo > figure {
+				aspect-ratio: 4/6;
+			}
+				div#servicios_contG .contenedorCol .contenedor .imagenTitulo > figure img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+				}
+			div#servicios_contG .contenedorCol .contenedor .imagenTitulo > h3 {
+				position: absolute;
+				margin: 0 auto;
+				opacity: 1;
+			}
+			div#servicios_contG .contenedorCol .contenedor:hover .imagenTitulo > h3{
+				opacity: 0;
+			}
+		div#servicios_contG .contenedorCol .contenedor .info {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 38px;
+			gap: 28px;
+			opacity: 0;
+
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+			div#servicios_contG .contenedorCol .contenedor .info::after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background-color: #000000dd;
+				z-index: 0;
+			}
+			div#servicios_contG .contenedorCol .contenedor .info > *{
+				z-index: 2;
+			}
+		div#servicios_contG .contenedorCol .contenedor:hover .info{
+			opacity: 1;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-height: 975px){
+	.inicio_socialLateral > p {
+		letter-spacing: 3px;
+		font-size: clamp(8px, 1.2vh, 16px);
+	}
+}
+@media screen and (max-height: 714px){
+	.inicio_socialLateral > p {
+		display: none;
+	}
+}
+
+
+
+@media screen and (max-width: 1080px){
+	.casa_servicios {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 860px){
+	.primerMargen {
+		padding: 82px 0px;
+	}
+		.boxServicios {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 32px 18px;
+		}
+		.inicioSecNosotros .colImg{
+
+		}
+		.boxNosotrosG {
+			flex-direction: column-reverse;
+		}
+
+		.proyectosBox ul {
+			flex-wrap: wrap;
+			grid-gap: 0vw 
+		}
+		.servicio {
+			grid-template-columns: repeat(3, 1fr);
+			gap: calc(1rem + 2dvw);
+		}
+			
+}
+@media screen and (max-width: 690px){
+	.proyectosBox ul > li > .info > .wp-block-post-excerpt{
+		display: none;
+	}
+	.casa_servicios {
+		grid-template-columns: repeat(1, 1fr);
+	}
+		.casa_servicios .casa_servicio {
+			padding: max(2.5rem, 4dvw) !important;
+		}
+
+	.servicio {
+		grid-template-columns: repeat(1, 1fr);
+		gap: calc(1rem + 2dvw);
+	}
+		.servicio > li .proyectosInfoBox figure {
+			width: 100%;
+		}
+}
+@media screen and (max-width: 460px){
+
+}
+@media screen and (max-width: 390px){
+	.boxServicios {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.boxServicioInfo .boxInfoG {
+		display: block;
+		font-size: 86%;
+	}
+		.boxServicioInfo .boxInfoG .iconoFalso {
+			aspect-ratio: 1;
+		}
+		.boxInfoCol {
+			width: 96%;
+		}
+}
+
+
+@media screen and (orientation:landscape){
+
+}
+@media screen and (orientation:landscape) and (min-width: 780px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el panel de administracion de Wordpress */
+.wp-admin .editor-styles-wrapper.block-editor-writing-flow {
+	padding: 32px !important;
+}
+.wp-admin .boxServicios {
+	grid-template-columns: repeat(2, 1fr);
+}
+.wp-admin .iconoFalso{
+	display: none;
+}
+.wp-admin .boxServicioInfo{
+	display: block;
+	opacity: 1;
+}
+.wp-admin .boxMargenP1{
+	width: 100%;
+	margin: 0 auto;
+}
+.wp-admin .boxServicio figure img{
+	width: auto;
+	min-height: 94px;
+}
